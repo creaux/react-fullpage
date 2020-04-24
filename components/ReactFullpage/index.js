@@ -123,7 +123,7 @@ class ReactFullpage extends React.Component {
 
   init(opts) {
     this.log('Reinitializing fullpage with options', opts);
-    new Fullpage(ID_SELECTOR, opts); // eslint-disable-line
+    new this.props.Fullpage(ID_SELECTOR, opts); // eslint-disable-line
     this.fullpageApi = window.fullpage_api;
     this.fpUtils = window.fp_utils;
     this.fpEasings = window.fp_easings;
